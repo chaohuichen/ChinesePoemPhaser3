@@ -1,4 +1,5 @@
-
+import Player from '../entity/Player';
+import Ground from '../entity/Ground';
 export default class FgScene extends Phaser.Scene {
   constructor() {
     super('FgScene');
@@ -7,20 +8,31 @@ export default class FgScene extends Phaser.Scene {
   preload() {
     // Preload Sprites
     // << LOAD SPRITES HERE >>
-
+    this.load.spritesheet('josh', 'assets/spriteSheets/josh.png', {
+      frameWidth: 340,
+      frameHeight: 460
+    });
+    this.load.image('ground', 'assets/sprites/ground.png');
     // Preload Sounds
     // << LOAD SOUNDS HERE >>
   }
 
   create() {
+    this.player = new Player(this, 20, 400, 'josh').setScale(0.3);
+    this.groundGroup = this.physics.add.staticGroup({ classType: Ground });
+
+    this.createGround(160, 540);
+    this.createGround(600, 540);
     // Create game entities
     // << CREATE GAME ENTITIES HERE >>
-
     // Create sounds
     // << CREATE SOUNDS HERE >>
-
     // Create collisions for all entities
     // << CREATE COLLISIONS HERE >>
+  }
+
+  createGround(x, y) {
+    this.groundGroup.create(x, y, 'ground');
   }
 
   // time: total time elapsed (ms)
@@ -28,5 +40,4 @@ export default class FgScene extends Phaser.Scene {
   update(time, delta) {
     // << DO UPDATE LOGIC HERE >>
   }
-
 }
