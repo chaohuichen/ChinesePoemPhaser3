@@ -18,6 +18,7 @@ import config from './config/config';
 import BgScene from './scenes/BgScene';
 import FgScene from './scenes/FgScene';
 import MainScene from './scenes/MainScene';
+
 class Game extends Phaser.Game {
   constructor() {
     // Add the config file to the game
