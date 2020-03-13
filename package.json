@@ -4,10 +4,8 @@
   "description": "A workshop for getting started with Phaser",
   "main": "src/index.js",
   "scripts": {
-    
-    "deploy": "script/deploy",
-    "start": "node server.js", // serves the application
-  "heroku-postbuild": "webpack -p" // runs after installation
+    "start": "node server.js",
+    "deploy": "script/deploy"
   },
   "dependencies": {
     "events": "^3.1.0",
