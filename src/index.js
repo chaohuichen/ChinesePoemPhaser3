@@ -13,7 +13,7 @@ But this hasn't happened yet!
 */
 
 // Bring in all the scenes
-import 'phaser';
+import Phaser from 'phaser';
 import config from './config/config';
 import BgScene from './scenes/BgScene';
 import FgScene from './scenes/FgScene';
