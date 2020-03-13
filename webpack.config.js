@@ -13,9 +13,8 @@ module.exports = {
   //   hot: true
   // },
   output: {
-    path: path.resolve(__dirname, 'public'),
-    publicPath: '/public/',
-    filename: 'bundle.js'
+    path: __dirname,
+    filename: './public/bundle.js'
   },
   watchOptions: {
     ignored: /node_modules/

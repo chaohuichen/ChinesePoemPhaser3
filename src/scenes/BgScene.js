@@ -9,12 +9,12 @@ export default class BgScene extends Phaser.Scene {
     // Preload Sprites
     // << LOAD SPRITE HERE >>
 
-    this.load.image('sky', 'assets/backgrounds/sky.png');
+    this.load.image('BG', 'assets/backgrounds/BG.png');
   }
 
   create() {
     // Create Sprites
     // << CREATE SPRITE HERE >>
-    this.add.image(0, 0, 'sky').setOrigin(0, 0);
+    this.add.image(0, 0, 'BG').setOrigin(0, 0);
   }
 }
