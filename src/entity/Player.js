@@ -10,6 +10,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.scene.physics.world.enable(this);
 
     this.facingLeft = false;
+    this.body.setCollideWorldBounds(true);
   }
 
   updateMovement(cursors) {
@@ -42,10 +43,11 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
   }
 
-  updateJump(cursors) {
+  updateJump(cursors, jumpSound) {
     if (cursors.up.isDown && this.body.touching.down) {
-      this.setVelocityY(-350);
+      this.setVelocityY(-450);
       this.play('jump', true);
+      jumpSound.play();
     }
   }
 
@@ -56,10 +58,10 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   }
 
   // Check which controller button is being pushed and execute movement & animation
-  update(cursors) {
+  update(cursors, jumpSound) {
     // << INSERT CODE HERE >>
     this.updateMovement(cursors);
-    this.updateJump(cursors);
+    this.updateJump(cursors, jumpSound);
     this.updateInAir();
   }
 }
