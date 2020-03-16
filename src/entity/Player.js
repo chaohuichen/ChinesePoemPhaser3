@@ -47,7 +47,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     if (cursors.up.isDown && this.body.touching.down) {
       this.setVelocityY(-450);
       this.play('jump', true);
-      jumpSound.play();
+      // jumpSound.play();
     }
   }
 
