@@ -13,7 +13,7 @@ This project was developed for the FUllstack Academy's "Stack-a-thon" where we t
 ## Features
 
 -the player has to collect the matching chinese charater.
--the English translation after the player collect all the require chinese characters
+-the English translation after the player collect all the require chinese characters.
 
 ## Project Challenges
 
