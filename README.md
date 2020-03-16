@@ -12,10 +12,10 @@ This project was developed for the FUllstack Academy's "Stack-a-thon" where we t
 
 ## Features
 
--the player has to collect the matching chinese charater.
--the English translation after the player collect all the require chinese characters.
+- the player has to collect the matching chinese charater.
+- the English translation after the player collect all the require chinese characters.
 
 ## Project Challenges
 
--the game logic are a bit challenge for me to figure out where should the character goes
--creat the chinese character sprite by using Piskel
+- the game logic are a bit challenge for me to figure out where should the character goes
+- creat the chinese character sprite by using Piskel
