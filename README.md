@@ -2,7 +2,7 @@
 
 Let's learn chinese Poem and enjoy playing a game!
 
-This project was developed for the FUllstack Academy's "Stack-a-thon" where we tasked to create a project within 4 days. So, I build a mini game with Phaser3 that let player learning while playing.
+This project was developed for the Fullstack Academy's "Stack-a-thon" where we tasked to create a project within 4 days. So, I build a mini game with Phaser3 that let player learning while playing.
 
 ## Setup
 
