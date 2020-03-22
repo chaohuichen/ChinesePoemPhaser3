@@ -1,8 +1,8 @@
 # ChinesePoem Phaser3
 
-Let's learn chinese Poem and enjoy playing a game!
+Let's learn chinese Poem and enjoy playing game!
 
-This project was developed for the Fullstack Academy's "Stack-a-thon" where we tasked to create a project within 4 days. So, I build a mini game with Phaser3 that let player learning while playing.
+This project was developed for the Fullstack Academy's "Stack-a-thon" where we tasked to build something fun within 4 days. Therefore,  I build a mini-game with Phaser3 relate to my interest in Chinese. This game introduces the classic Chinese poem "thoughts on a silent night" by Li Bai to the player. The player can learn the famous poem while having fun!
 
 ## Setup
 
